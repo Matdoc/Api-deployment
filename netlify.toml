@@ -1,6 +1,14 @@
 [build]
+  command = "npm install && npm run build"
+  publish = "src"
   functions = "netlify/functions"
+
+[dev]
+  command = "npm run dev"
+  port = 3000
+
+[functions]
+  directory = "functions"
 
 [build.environment]
   IS_NETLIFY = "true"
-
