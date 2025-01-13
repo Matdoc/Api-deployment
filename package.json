@@ -6,13 +6,13 @@
   "type": "module",
   "scripts": {
     "start": "node src/app.js",
-    "build": "echo 'No build step required'",
+    "build": "npm install",
     "deploy": "netlify deploy"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "serverless-http": "^3.2.0"
   },
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
